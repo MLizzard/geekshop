@@ -5,15 +5,13 @@
     <scanScope>JavaOnly</scanScope>
     <copyLibs>true</copyLibs>
     <option name="thirdPartyClasspath" />
-    <option name="activeLocationIds">
-      <option value="03390df5-c89c-4c46-9d0e-fb3cb90106f4" />
-    </option>
+    <option name="activeLocationIds" />
     <option name="locations">
       <list>
         <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
         <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
-        <ConfigurationLocation id="03390df5-c89c-4c46-9d0e-fb3cb90106f4" type="LOCAL_FILE" scope="All" description="Google modified">
-          $PROJECT_DIR$/../../Telegram/google-checkstyle.xml
+        <ConfigurationLocation id="bae78b92-9852-40d5-b1d4-a3c4e39eea0a" type="LOCAL_FILE" scope="All" description="Google-fixed">
+          D:/файлы/Telegram/google-checkstyle.xml
           <option name="properties">
             <map>
               <entry key="org.checkstyle.google.severity" value="warning" />

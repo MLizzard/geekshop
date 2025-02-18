@@ -1,5 +1,6 @@
 package com.example.geekshop.controllers;
 
+import com.example.geekshop.exceptions.ProductNotFoundException;
 import com.example.geekshop.model.Product;
 import com.example.geekshop.service.ProductService;
 import java.util.List;
@@ -25,7 +26,7 @@ public class ProductController {
     public Product findByName(@RequestParam String name) {
         Product product = productService.findByName(name);
         if (product == null) {
-            throw new RuntimeException("Продукт не найден");
+            throw new ProductNotFoundException("Продукт не найден");
         }
         return product;
     }
@@ -35,7 +36,7 @@ public class ProductController {
     public Product findByIndex(@PathVariable int index) {
         Product product = productService.findByIndex(index);
         if (product == null) {
-            throw new RuntimeException("Некорректный индекс");
+            throw new ProductNotFoundException("Некорректный индекс");
         }
         return product;
     }
